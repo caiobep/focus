@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true,
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "standard",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:functional/recommended",
+    "plugin:fp/recommended",
+    "plugin:jest/all"
+  ],
+  "plugins": [
+    "jest",
+    "prettier",
+    "babel",
+    "functional",
+    "immutable",
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "rules": {
+    "immutable/no-let": 2,
+    "immutable/no-this": 2,
+    "immutable/no-mutation": 2,
+    "fp/no-arguments": "error",
+    "fp/no-class": "error",
+    "fp/no-delete": "error",
+    "fp/no-events": "error",
+    "fp/no-get-set": "error",
+    "fp/no-let": "error",
+    "fp/no-loops": "error",
+    "fp/no-mutating-assign": "error",
+    "fp/no-mutating-methods": "error",
+    "fp/no-mutation": "error",
+    "fp/no-proxy": "error",
+    "fp/no-rest-parameters": "error",
+    "fp/no-this": "error",
+    "fp/no-throw": "error",
+    "fp/no-unused-expression": "error",
+    "fp/no-valueof-field": "error",
+    "functional/prefer-readonly-type": 0,
+    "no-var": "error"
+  }
+}
